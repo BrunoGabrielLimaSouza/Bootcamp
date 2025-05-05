@@ -34,7 +34,7 @@ public class Main {
             System.out.println("Aluno reprovado com média: " + media);
         }
         System.out.println("----------------------------------------------");
-        int n = 5;
+        int n = 8;
         int resultado = 0;
         for (int i = 0; i <= 10; i++){
             resultado = n*i;
