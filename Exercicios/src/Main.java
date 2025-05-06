@@ -5,8 +5,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
 
-
-        System.out.println("Digite dois numeros inteiros:");
+        //Dia01
+       /*** System.out.println("Digite dois numeros inteiros:");
         int a = read.nextInt();
         int b = read.nextInt();
         int soma = a + b;
@@ -40,6 +40,21 @@ public class Main {
             resultado = n*i;
             System.out.println("5 x " + i + " = " + resultado);
         }
+        ***/
+        //dia02
+       /* Pessoa pessoa1 = new Pessoa("luiza",35);
+        Pessoa pessoa2 = new Pessoa("Bruno",17);
+
+        System.out.println(pessoa1.getNome() + " é mais velho(a) que " + pessoa2.getNome() + " ? " + pessoa1.difIdade(pessoa2));
+        */
+/*
+        Produto produto1 = new Produto(60);
+        System.out.println("Digite a porcentagem do desconto (apenas o numero): ");
+        double descontoDigitado = read.nextDouble();
+        produto1.setDesconto(descontoDigitado);
+        System.out.println(produto1.simularDesconto());
+
+*/
         read.close();
     }
 }
