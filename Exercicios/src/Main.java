@@ -55,6 +55,20 @@ public class Main {
         System.out.println(produto1.simularDesconto());
 
 */
+//Dia03
+        Frota frota = new Frota();
+        Carro carro1 = new Carro("Ford", "Ford KA", 2015, 4);
+        frota.adicionarVeiculo(carro1);
+        Caminhao caminhao1 = new Caminhao("Ferrari", "XRL8", 2010,  100);
+        frota.adicionarVeiculo(caminhao1);
+        carro1.exibirInfo();
+        caminhao1.exibirInfo();
+
+        Motorista motorista1 = new Motorista("Carlos", "01234567890");
+        Motorista motorista2 = new Motorista("Bruno", "01234567890");
+        motorista2.atribuirVeiculo(caminhao1);
+        motorista1.atribuirVeiculo(carro1);
+
         read.close();
     }
 }

@@ -1,25 +1,25 @@
 public class Caminhao extends Veiculo{
-    private float capacidade_carga;
+    private float capacidadeCarga;
 
 
 
     @Override
-    public void exibir_info(){
+    public void exibirInfo(){
     super.exibirInfo();
-    System.out.println("Capacidade de carga: " + this.capacidade_carga);
+    System.out.println("Capacidade de carga: " + this.capacidadeCarga);
     }
 
 
     public float getCapacidade_carga() {
-        return capacidade_carga;
+        return capacidadeCarga;
     }
 
-    public void setCapacidade_carga(float capacidade_carga) {
-        this.capacidade_carga = capacidade_carga;
+    public void setCapacidade_carga(float capacidadeCarga) {
+        this.capacidadeCarga = capacidadeCarga;
     }
 
-    public Caminhao(String marca, String modelo, int ano, float velocidade) {
-        super(marca, modelo, ano, velocidade);
-        this.capacidade_carga = capacidade_carga;
+    public Caminhao(String marca, String modelo, int ano, float capacidadeCarga) {
+        super(marca, modelo, ano);
+        this.capacidadeCarga = capacidadeCarga;
     }
 }

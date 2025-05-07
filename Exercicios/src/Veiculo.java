@@ -2,7 +2,7 @@ public class Veiculo {
     private String marca;
     private String modelo;
     private int ano;
-    private float velocidade;
+    private double velocidade;
 
     public void acelerar(){
         this.velocidade +=10;
@@ -10,6 +10,9 @@ public class Veiculo {
 
     public void frear(){
         this.velocidade -=10;
+        if (this.velocidade <= 0) {
+            this.velocidade =0;
+        }
     }
 
     public void exibirInfo(){
@@ -20,7 +23,7 @@ public class Veiculo {
         System.out.println("Velocidade Atual: " + this.velocidade);
 
     }
-    public Veiculo(String marca, String modelo, int ano, float velocidade) {
+    public Veiculo(String marca, String modelo, int ano) {
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
@@ -51,7 +54,7 @@ public class Veiculo {
         this.ano = ano;
     }
 
-    public float getVelocidade() {
+    public double getVelocidade() {
         return velocidade;
     }
 
